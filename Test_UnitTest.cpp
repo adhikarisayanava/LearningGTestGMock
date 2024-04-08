@@ -6,7 +6,10 @@ using namespace std;
 class MyClass {
     string id;
     public:
-        MyClass(string _id) : id(_id) {}
+        MyClass(string _id) {
+
+            id = _id;
+        }
         string GetId() {
             return id;
         }
