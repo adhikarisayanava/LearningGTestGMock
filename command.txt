@@ -1,0 +1,8 @@
+To compile : g++ <file_name> -lgtest -lgtest_main
+	     For tests with gmock : g++ <file_name> -lgtest -lgtest_main -lgmock
+To run : ./a.out
+
+Difference between Stubs and Mocks:
+A Stub is a minimal implementation of an interface that normally returns hardcoded responses. It is used when you want to test the behavior of the system under test (SUT) when it calls some dependent component. Stubs don't fail tests, they just assist in setting up the required conditions.
+
+A Mock, on the other hand, not only mimics the behavior of the object it replaces, but it also records how it was called, and allows you to make assertions about those calls. You can check parameters passed to methods, how many times a method was called, etc.
